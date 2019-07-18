@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Formulario Teste </title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Alessandra Souza" />
+    <meta name="description" content="Esta pagina foi criada com o intuito de estudar html." />
+</head>
+
+<body>
+    <h1> Bem vindo ao Projeto: Estudo_Front!</h1>
+    <h2> Preencha o formulário abaixo para testar a página</h2>
+
+    <form action="Script_do_form.txt" method="post">
+
+        <!-- Dados Pessoais -->
+        <fieldset>
+            <legend> Dados Pessoais </legend>
+            <table cellspacing="10">
+                <tr>
+                    <td>
+                        <label for="nome">Nome: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="nome">
+                    </td>
+                    <td>
+                        <label for="sobrenome">Sobrenome: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="Sobrenome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nascimento">Nascimento: </label>
+                    </td>
+                    <td align="left">
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="rg">RG: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="rg" size="8" maxlength="8"> -
+                        <input type="text" name="dig_rg" size="1" maxlength="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cpf">CPF: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="cpf" size="9" maxlength="9"> -
+                        <input type="text" name="dig_cpf" size="2" maxlength="2">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br />
+
+        <input type="submit">
+        <input type="reset" value="Limpar">
+
+    </form>
+</body>
+
+</html>
