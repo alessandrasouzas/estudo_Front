@@ -7,6 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Alessandra Souza" />
     <meta name="description" content="Esta pagina foi criada com o intuito de estudar html." />
+	<link rel='stylesheet' href='_css/estilo.css'>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <form action="Script_do_form.txt" method="post">
 
         <!-- Dados Pessoais -->
-        <fieldset>
+        <fieldset class='campos'>
             <legend> Dados Pessoais </legend>
             <table cellspacing="10">
                 <tr>
@@ -63,7 +64,7 @@
         </fieldset>
         <br />
         <!-- ENDEREÇO -->
-        <fieldset>
+        <fieldset class='campos'>
             <legend>Dados de Endereço</legend>
             <table cellspacing="10">
 
@@ -146,7 +147,7 @@
 
         <br />
         <!-- DADOS DE LOGIN -->
-        <fieldset>
+        <fieldset class='campos'>
             <legend>Dados de login</legend>
             <table cellspacing="10">
                 <tr>
@@ -194,8 +195,9 @@
         </fieldset>
         <br />
 
-        <input type="submit">
-        <input type="reset" value="Limpar">
+        <input type="submit" name="enviar" id="enviar" value="Enviar">
+        <input type="reset" name="limpar" id="limpar" value="Limpar">
+
 
     </form>
 </body>
